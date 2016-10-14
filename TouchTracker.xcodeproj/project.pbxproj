@@ -8,24 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		DAFEB45B1DB170B2000E18E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFEB45A1DB170B2000E18E5 /* main.m */; };
-		DAFEB45E1DB170B2000E18E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFEB45D1DB170B2000E18E5 /* AppDelegate.m */; };
+		DAFEB45E1DB170B2000E18E5 /* BNRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFEB45D1DB170B2000E18E5 /* BNRAppDelegate.m */; };
 		DAFEB4611DB170B2000E18E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFEB4601DB170B2000E18E5 /* ViewController.m */; };
 		DAFEB4641DB170B2000E18E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFEB4621DB170B2000E18E5 /* Main.storyboard */; };
 		DAFEB4661DB170B3000E18E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFEB4651DB170B2000E18E5 /* Assets.xcassets */; };
 		DAFEB4691DB170B3000E18E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFEB4671DB170B3000E18E5 /* LaunchScreen.storyboard */; };
+		DAFEB4721DB174B4000E18E5 /* BNRLine.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFEB4711DB174B4000E18E5 /* BNRLine.m */; };
+		DAFEB4751DB1752D000E18E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFEB4741DB1752D000E18E5 /* UIKit.framework */; };
+		DAFEB4781DB1759A000E18E5 /* BNRDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFEB4771DB1759A000E18E5 /* BNRDrawView.m */; };
+		DAFEB47B1DB175DD000E18E5 /* BNRDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFEB47A1DB175DD000E18E5 /* BNRDrawViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DAFEB4561DB170B2000E18E5 /* TouchTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFEB45A1DB170B2000E18E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DAFEB45C1DB170B2000E18E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DAFEB45D1DB170B2000E18E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAFEB45C1DB170B2000E18E5 /* BNRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRAppDelegate.h; sourceTree = "<group>"; };
+		DAFEB45D1DB170B2000E18E5 /* BNRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRAppDelegate.m; sourceTree = "<group>"; };
 		DAFEB45F1DB170B2000E18E5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DAFEB4601DB170B2000E18E5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DAFEB4631DB170B2000E18E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAFEB4651DB170B2000E18E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAFEB4681DB170B3000E18E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAFEB46A1DB170B3000E18E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFEB4701DB174B4000E18E5 /* BNRLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRLine.h; sourceTree = "<group>"; };
+		DAFEB4711DB174B4000E18E5 /* BNRLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRLine.m; sourceTree = "<group>"; };
+		DAFEB4741DB1752D000E18E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DAFEB4761DB1759A000E18E5 /* BNRDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDrawView.h; sourceTree = "<group>"; };
+		DAFEB4771DB1759A000E18E5 /* BNRDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDrawView.m; sourceTree = "<group>"; };
+		DAFEB4791DB175DD000E18E5 /* BNRDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDrawViewController.h; sourceTree = "<group>"; };
+		DAFEB47A1DB175DD000E18E5 /* BNRDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDrawViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAFEB4751DB1752D000E18E5 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +56,7 @@
 			children = (
 				DAFEB4581DB170B2000E18E5 /* TouchTracker */,
 				DAFEB4571DB170B2000E18E5 /* Products */,
+				DAFEB4731DB1752D000E18E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +71,16 @@
 		DAFEB4581DB170B2000E18E5 /* TouchTracker */ = {
 			isa = PBXGroup;
 			children = (
-				DAFEB45C1DB170B2000E18E5 /* AppDelegate.h */,
-				DAFEB45D1DB170B2000E18E5 /* AppDelegate.m */,
+				DAFEB45C1DB170B2000E18E5 /* BNRAppDelegate.h */,
+				DAFEB45D1DB170B2000E18E5 /* BNRAppDelegate.m */,
 				DAFEB45F1DB170B2000E18E5 /* ViewController.h */,
 				DAFEB4601DB170B2000E18E5 /* ViewController.m */,
+				DAFEB4701DB174B4000E18E5 /* BNRLine.h */,
+				DAFEB4711DB174B4000E18E5 /* BNRLine.m */,
+				DAFEB4761DB1759A000E18E5 /* BNRDrawView.h */,
+				DAFEB4771DB1759A000E18E5 /* BNRDrawView.m */,
+				DAFEB4791DB175DD000E18E5 /* BNRDrawViewController.h */,
+				DAFEB47A1DB175DD000E18E5 /* BNRDrawViewController.m */,
 				DAFEB4621DB170B2000E18E5 /* Main.storyboard */,
 				DAFEB4651DB170B2000E18E5 /* Assets.xcassets */,
 				DAFEB4671DB170B3000E18E5 /* LaunchScreen.storyboard */,
@@ -77,6 +96,14 @@
 				DAFEB45A1DB170B2000E18E5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAFEB4731DB1752D000E18E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAFEB4741DB1752D000E18E5 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAFEB4781DB1759A000E18E5 /* BNRDrawView.m in Sources */,
+				DAFEB47B1DB175DD000E18E5 /* BNRDrawViewController.m in Sources */,
 				DAFEB4611DB170B2000E18E5 /* ViewController.m in Sources */,
-				DAFEB45E1DB170B2000E18E5 /* AppDelegate.m in Sources */,
+				DAFEB45E1DB170B2000E18E5 /* BNRAppDelegate.m in Sources */,
+				DAFEB4721DB174B4000E18E5 /* BNRLine.m in Sources */,
 				DAFEB45B1DB170B2000E18E5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

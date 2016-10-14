@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  BNRDrawViewController.h
 //  TouchTracker
 //
 //  Created by Leksha Ramdenee on 2016-10-14.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface BNRDrawViewController : UIViewController
 
 @end
-
