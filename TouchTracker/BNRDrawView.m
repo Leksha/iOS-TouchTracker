@@ -102,4 +102,17 @@
     [self setNeedsDisplay];
 }
 
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    // Let's put in a log statement to see the order of events
+    NSLog(@"touchesCancelled: %@", NSStringFromSelector(_cmd));
+    
+    for (UITouch *t in touches){
+        NSValue *key = [NSValue valueWithNonretainedObject:t];
+        [self.linesInProgress removeObjectForKey:key];
+    }
+    
+    [self setNeedsDisplay];
+
+}
+
 @end
