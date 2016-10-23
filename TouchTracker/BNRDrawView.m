@@ -37,6 +37,10 @@
         tapRecognizer.delaysTouchesBegan = YES;
         [tapRecognizer requireGestureRecognizerToFail:doubleTapRecognizer];
         [self addGestureRecognizer:tapRecognizer];
+        
+        UILongPressGestureRecognizer * pressRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self
+                                                                                                       action:@selector(longPress:)];
+        [self addGestureRecognizer:pressRecognizer];
     }
     return self;
 }
@@ -136,7 +140,7 @@
 
 }
 
-#pragma mark Taps
+#pragma mark Taps & Presses
 
 - (void)doubleTap:(UIGestureRecognizer *)gr {
     NSLog(@"Recognized Double Tap!");
@@ -204,4 +208,18 @@
     [self setNeedsDisplay];
 }
 
+
+- (void)longPress:(UIGestureRecognizer *)gr {
+    if (gr.state == UIGestureRecognizerStateBegan ) {
+        CGPoint point = [gr locationInView:self];
+        self.selectedLine = [self lineAtPoint:point];
+        
+        if (self.selectedLine) {
+            [self.linesInProgress removeAllObjects];
+        }
+    } else if (gr.state == UIGestureRecognizerStateEnded) {
+        self.selectedLine = nil;
+    }
+    [self setNeedsDisplay];
+}
 @end
