@@ -216,7 +216,7 @@
 
 
 - (void)longPress:(UIGestureRecognizer *)gr {
-    if (gr.state == UIGestureRecognizerStateBegan ) {
+    if (gr.state == UIGestureRecognizerStateBegan) {
         CGPoint point = [gr locationInView:self];
         self.selectedLine = [self lineAtPoint:point];
         
@@ -240,7 +240,7 @@
 
 - (void)moveLine:(UIPanGestureRecognizer *)gr {
     // If we have not selected a line, we do not do anything here
-    if (!self.selectedLine) {
+    if (!self.selectedLine || [UIMenuController sharedMenuController].isMenuVisible) {
         return;
     }
     
